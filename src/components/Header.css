@@ -1,0 +1,134 @@
+/* General resets to ensure smooth behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; /* Recommended for this look */
+}
+
+body {
+    margin: 0;
+    min-height: 200vh; /* Just for testing scroll */
+    background: radial-gradient(
+        circle at center,
+        #2a2a2a 0%,
+        #000000 100%
+    );
+}
+
+/* HEADER BASE */
+.header {
+    position: fixed;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    width: 90%;
+    max-width: 1200px;
+    padding: 12px 35px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-radius: 50px; /* More rounded for modern pill look */
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Scroll Effect - Shrinks slightly and darkens */
+.header.scroll {
+    top: 10px;
+    width: 85%;
+    padding: 8px 30px;
+    background: rgba(0, 0, 0, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* LOGO */
+.logo h1 {
+    color: #fff;
+    letter-spacing: 1px;
+    font-size: 22px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.logo h1 span {
+    color: #999; /* Subtle accent */
+}
+
+/* LINKS */
+.links {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.links li a {
+    text-decoration: none;
+    color: #aaa;
+    font-size: 15px;
+    font-weight: 500;
+    position: relative;
+    transition: 0.3s;
+}
+
+/* Animated Underline Effect */
+.links li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #777;
+    transition: width 0.3s ease;
+}
+
+.links li a:hover {
+    color: #fff;
+}
+
+.links li a:hover::after {
+    width: 100%;
+}
+
+/* ICONS */
+.icons {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.icons li a {
+    font-size: 19px;
+    color: #aaa;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.icons li a:hover {
+    color: #fff;
+    transform: translateY(-3px); /* Gentle lift */
+    filter: drop-shadow(0 0 5px rgba(255,255,255,0.3));
+}
+
+/* Responsive: Hide links on very small screens (Simple fix) */
+@media (max-width: 768px) {
+    .links {
+        display: none; /* In a real project, you'd add a mobile menu here */
+    }
+    .header {
+        width: 95%;
+    }
+}
