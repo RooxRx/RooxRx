@@ -102,33 +102,94 @@ body {
 .links li a:hover::after {
     width: 100%;
 }
-
-/* ICONS */
-.icons {
+.header {
+    position: fixed;
+    top: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1000;
+    width: 90%;
+    max-width: 1200px;
+    padding: 14px 35px;
     display: flex;
-    gap: 20px;
-    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(15, 15, 15, 0.6); /* Dark base */
+    backdrop-filter: blur(10px);
+    overflow: hidden; /* Muhim bach l-light maykhrejch */
+    transition: all 0.4s ease;
 }
 
-.icons li a {
-    font-size: 19px;
-    color: #aaa;
-    transition: all 0.3s ease;
-    display: inline-block;
+/* Had l-div hiya l-moteur dyal l-effect */
+.spotlight {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none; /* Bach may-blockich l-clicks */
+    /* Effect 1: Spotlight follow mouse */
+    background: radial-gradient(
+        600px circle at var(--mouse-x) var(--mouse-y), 
+        rgba(255, 255, 255, 0.08), 
+        transparent 40%
+    );
+    z-index: -1;
 }
 
-.icons li a:hover {
+/* Effect 2: Pixels/Dots Overlay */
+.header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: -1;
+    /* Had l-pattern dyal dots ghadi yban ghir finma daz l-light */
+    background-image: radial-gradient(rgba(255, 255, 255, 0.15) 1px, transparent 1px);
+    background-size: 15px 15px; /* Size dyal pixel grid */
+    mask-image: radial-gradient(
+        250px circle at var(--mouse-x) var(--mouse-y), 
+        black, 
+        transparent
+    );
+}
+
+.header.scroll {
+    top: 10px;
+    background: rgba(10, 10, 10, 0.85);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* LOGO & LINKS (Keep your old styling but ensure they are on top) */
+.logo, .links, .icons {
+    position: relative;
+    z-index: 2;
+}
+
+.logo h1 {
     color: #fff;
-    transform: translateY(-3px); /* Gentle lift */
-    filter: drop-shadow(0 0 5px rgba(255,255,255,0.3));
+    font-size: 24px;
+    font-weight: 700;
 }
 
-/* Responsive: Hide links on very small screens (Simple fix) */
-@media (max-width: 768px) {
-    .links {
-        display: none; /* In a real project, you'd add a mobile menu here */
-    }
-    .header {
-        width: 95%;
-    }
+.logo h1 span { color: #777; }
+
+.links { display: flex; list-style: none; gap: 30px; }
+
+.links li a {
+    text-decoration: none;
+    color: rgba(255,255,255,0.6);
+    font-size: 16px;
+    transition: 0.3s;
 }
+
+.links li a:hover {
+    color: #fff;
+    text-shadow: 0 0 10px rgba(255,255,255,0.5);
+}
+
+.icons { display: flex; gap: 20px; }
+.icons li a { color: rgba(255,255,255,0.6); font-size: 20px; transition: 0.3s; }
+.icons li a:hover { color: #fff; transform: scale(1.2); }

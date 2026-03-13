@@ -89,7 +89,7 @@ export default function Project() {
       <div className="project-bg-overlay"></div>
       
       <div className="title-wrapper">
-        <h2 className="title">Music <span className="accent">Vault</span></h2>
+        <h2 className="title">Some <span className="accent">Shit</span></h2>
         <div className="title-line"></div>
       </div>
 
@@ -106,7 +106,7 @@ export default function Project() {
           <div className="controls-section">
             <div className="info">
               <h2>{currentVideo.title}</h2>
-              <p className="accent">Digital Stream</p>
+              <p className="accent">Lmasi7 Digital</p>
             </div>
 
             <div className="progress-area">
@@ -134,7 +134,7 @@ export default function Project() {
         </div>
 
         <div className="playlist-sidebar">
-          <h3>Up Next</h3>
+          <h3>My Playlist</h3>
           <div className="list-container">
             {playlist.map((track) => (
               <div key={track.id} className={`list-item ${currentVideo.id === track.id ? "active" : ""}`} onClick={() => setCurrentVideo(track)}>

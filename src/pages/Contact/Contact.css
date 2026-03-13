@@ -38,16 +38,16 @@
 }
 
 .contact .accent {
-  color: #00d2ff;
+  color: #00a2ff;
   text-shadow: 0 0 20px rgba(0, 210, 255, 0.6);
 }
 
 .title-line {
   width: 80px;
   height: 4px;
-  background: #00d2ff;
+  background: #00a2ff;
   margin: 15px auto;
-  box-shadow: 0 0 15px #00d2ff;
+  box-shadow: 0 0 15px #00a2ff;
   border-radius: 10px;
 }
 
@@ -98,12 +98,12 @@
   justify-content: center;
   border-radius: 15px;
   font-size: 24px;
-  color: #00d2ff;
+  color: #00a2ff;
   transition: 0.4s;
 }
 
 .info-item:hover .icon-box {
-  background: #00d2ff;
+  background: #00a2ff;
   color: #000;
   box-shadow: 0 0 20px rgba(0, 210, 255, 0.4);
   transform: scale(1.1);
@@ -113,7 +113,7 @@
   display: block;
   font-size: 0.8rem;
   text-transform: uppercase;
-  color: #00d2ff;
+  color: #00a2ff;
   letter-spacing: 1px;
 }
 
@@ -163,10 +163,10 @@
   left: 50%;
   width: 0;
   height: 2px;
-  background: #00d2ff;
+  background: #00a2ff;
   transition: 0.4s;
   transform: translateX(-50%);
-  box-shadow: 0 0 10px #00d2ff;
+  box-shadow: 0 0 10px #00a2ff;
 }
 
 .contact-form input:focus ~ .input-focus,
@@ -178,7 +178,7 @@
   padding: 16px;
   border: none;
   border-radius: 12px;
-  background: linear-gradient(135deg, #00d2ff, #0072ff);
+  background: linear-gradient(135deg, #00a2ff, #0072ff);
   color: white;
   font-size: 1.1rem;
   font-weight: 600;
@@ -193,7 +193,7 @@
 
 .submit-btn:hover {
   transform: translateY(-5px);
-  box-shadow: 0 15px 30px rgba(0, 210, 255, 0.5);
+  box-shadow: 0 15px 30px rgba(255, 0, 0, 0.5);
   filter: brightness(1.1);
 }
 

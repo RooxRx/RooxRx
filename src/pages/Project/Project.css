@@ -34,16 +34,16 @@
 }
 
 .accent {
-  color: #00d2ff;
+  color: #00a2ff;
   text-shadow: 0 0 20px rgba(0, 210, 255, 0.6);
 }
 
 .title-line {
   width: 100px;
   height: 4px;
-  background: #00d2ff;
+  background: #00a2ff;
   margin: 10px auto;
-  box-shadow: 0 0 15px #00d2ff;
+  box-shadow: 0 0 15px #00a2ff;
 }
 
 .player-container {
@@ -115,7 +115,7 @@
 .progress-bar {
   width: 100%;
   height: 6px;
-  accent-color: #00d2ff;
+  accent-color: #00a2ff;
   cursor: pointer;
 }
 
@@ -124,15 +124,15 @@
   background: none; border: none; color: white;
   font-size: 1.5rem; cursor: pointer; opacity: 0.5; transition: 0.3s;
 }
-.icon-btn:hover, .icon-btn.active { opacity: 1; color: #00d2ff; }
+.icon-btn:hover, .icon-btn.active { opacity: 1; color: #00a2ff; }
 
 .play-main {
   width: 70px; height: 70px; border-radius: 50%;
-  background: #00d2ff; border: none; color: black;
+  background: #00a2ff; border: none; color: black;
   font-size: 1.8rem; cursor: pointer; transition: 0.3s;
   box-shadow: 0 0 20px rgba(0, 210, 255, 0.4);
 }
-.play-main:hover { transform: scale(1.1); box-shadow: 0 0 30px #00d2ff; }
+.play-main:hover { transform: scale(1.1); box-shadow: 0 0 30px #00a2ff; }
 
 /* Sidebar */
 .playlist-sidebar {
@@ -148,10 +148,10 @@
   margin-bottom: 10px;
 }
 .list-item:hover { background: rgba(0, 210, 255, 0.05); }
-.list-item.active { background: rgba(0, 210, 255, 0.1); border-left: 4px solid #00d2ff; }
+.list-item.active { background: rgba(0, 210, 255, 0.1); border-left: 4px solid #00a2ff; }
 .list-item img { width: 50px; height: 50px; border-radius: 10px; margin-right: 15px; }
 
 /* Music Wave Animation */
 .wave-icon { display: flex; gap: 3px; margin-left: auto; }
-.wave-icon span { width: 3px; height: 15px; background: #00d2ff; animation: wave 0.5s infinite alternate; }
+.wave-icon span { width: 3px; height: 15px; background: #00a2ff; animation: wave 0.5s infinite alternate; }
 @keyframes wave { from { height: 5px; } to { height: 15px; } }

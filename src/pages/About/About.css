@@ -46,17 +46,17 @@
 }
 
 .accent {
-  color: #00d2ff;
+  color: #00a2ff;
   text-shadow: 0 0 20px rgba(0, 210, 255, 0.4);
 }
 
 .title-line {
   width: 100px;
   height: 4px;
-  background: #00d2ff;
+  background: #00a2ff;
   margin: 15px auto;
   border-radius: 2px;
-  box-shadow: 0 0 15px #00d2ff;
+  box-shadow: 0 0 15px #00a2ff;
 }
 
 /* Layout Grid */
@@ -116,7 +116,7 @@
   padding: 5px 15px;
   border-radius: 20px;
   font-size: 12px;
-  border: 1px solid #00d2ff;
+  border: 1px solid #00a2ff;
 }
 
 /* Glassmorphism Bio Card */
@@ -151,7 +151,7 @@
 
 .tag {
   background: rgba(0, 210, 255, 0.1);
-  color: #00d2ff;
+  color: #00a2ff;
   border: 1px solid rgba(0, 210, 255, 0.3);
   padding: 5px 15px;
   border-radius: 50px;
@@ -194,7 +194,7 @@
   background: #1a1a1a; /* Fallback color */
 }
 :root {
-  --cyan: #00d2ff;
+  --cyan: #00a2ff;
   --card-bg: rgba(255, 255, 255, 0.03);
 }
 
@@ -406,16 +406,16 @@
 }
 
 .accent {
-  color: #00d2ff;
-  text-shadow: 0 0 20px rgba(0, 210, 255, 0.5);
+  color: #00a2ff;
+  text-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
 }
 
 .title-line {
   width: 120px;
   height: 3px;
-  background: #00d2ff;
+  background: #00a2ff;
   margin: 10px auto 60px;
-  box-shadow: 0 0 15px #00d2ff;
+  box-shadow: 0 0 15px #00a2ff;
 }
 
 /* Glass Card - Enhanced for Dark BG */
@@ -435,10 +435,10 @@
 }
 
 /* Reuse the 3D Image CSS from previous step here... */
-.corner { border-color: #00d2ff; }
+.corner { border-color: #00a2ff; }
 .tag {
   background: rgba(0, 210, 255, 0.1);
-  color: #00d2ff;
+  color: #00a2ff;
   border: 1px solid rgba(0, 210, 255, 0.3);
   padding: 5px 15px;
   border-radius: 50px;

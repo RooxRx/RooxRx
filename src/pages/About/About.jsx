@@ -32,7 +32,7 @@ function About() {
                   <div className="inner-border"></div>
                   <img src="img3.png" alt="Rayan Front" />
                   <div className="card-overlay-glow"></div>
-                  <div className="flip-hint">REVEAL PROFILE</div>
+                  <div className="flip-hint">Another face for bitches</div>
                 </div>
                 <div className="photo-back">
                   <div className="inner-border"></div>
