@@ -49,7 +49,7 @@ function About() {
               <h3 className="greeting">Hi, I'm <span className="accent">Rayan</span></h3>
               <p>
                 I’m a 16-year-old developer from <strong>Temara, Morocco</strong>, 
-                currently in the TCS scientific track. 
+                currently in the I study in the Scientific Common Core in high school. 
               </p>
               <p>
                 I specialize in <strong>web design and scripting</strong>. I love turning 
