@@ -1,0 +1,35 @@
+.global-spotlight {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none; /* Bach tqder t-clicki 3la l-buttons ta7to */
+    z-index: 1; /* Ykon foq l-background l-asli w ta7t l-content */
+    overflow: hidden;
+    background: radial-gradient(
+        circle 500px at var(--mouse-x) var(--mouse-y),
+        rgba(255, 255, 255, 0.04),
+        transparent 80%
+    );
+}
+
+.pixel-grid {
+    position: absolute;
+    inset: 0;
+    /* Grid dyal sghar (Pixels) */
+    background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+    background-size: 25px 25px; 
+    
+    /* Had l-mask hwa li kaykhelli l-pixels ybanu ghir 7da l-mouse */
+    -webkit-mask-image: radial-gradient(
+        circle 250px at var(--mouse-x) var(--mouse-y),
+        black 20%,
+        transparent 100%
+    );
+    mask-image: radial-gradient(
+        circle 250px at var(--mouse-x) var(--mouse-y),
+        black 20%,
+        transparent 100%
+    );
+}
